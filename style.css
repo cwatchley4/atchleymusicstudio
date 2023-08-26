@@ -1,0 +1,558 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "gill-sans-nova", sans-serif;
+    background-color: white;
+}
+
+.button {
+    background-color: #29ABE2;
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s ease;
+    display: inline-block;
+    width: fit-content;
+}
+
+.button-inv {
+    background-color: white;
+    color: #29ABE2;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s ease;
+    display: inline-block;
+}
+
+.button:hover, .button-inv:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.button:active, .button-inv:active {
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -o-transform: scale(.95);
+    transform: scale(.95);
+}
+
+.highlight {
+    background-color: #D1F1FF;
+}
+
+/* .actionword {
+    color: #29ABE2;
+} */
+
+/* Header Below */
+
+.header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links a {
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+}
+
+.navbar .logo a {
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+}
+
+.navbar .lessons-button {
+    border: none;
+    background: none;
+}
+
+.navbar a:hover, button:hover {
+    transition: .2s;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .logo img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.navbar .links {
+   display: flex;
+   gap: 3rem;
+}
+
+.navbar .links a:hover, button:hover {
+    color: #29ABE2;
+}
+
+.navbar .toggle-btn {
+    color: #29ABE2;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 70px;
+    height: 0;
+    width: 300px;
+    background: #29ABE2;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+.dropdown-menu.open {
+    height: 204.45px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    padding: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.dropdown-menu a:hover {
+    scale: 1.05;
+}
+
+.button {
+    background-color: #29ABE2;
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s ease;
+    display: inline-block;
+    width: fit-content;
+}
+
+/* RESPONSIVE NAV */
+
+@media (max-width: 1095px) {
+    .navbar .links {
+        display: none;
+        color: #29ABE2;
+    }
+    .navbar .toggle-btn {
+        display: block;
+    }
+    .dropdown-menu {
+        display: block;
+    }
+    .navbar .login {
+        display: none;
+    }
+    .navbar .logo a {
+        font-size: 1rem;
+        margin-right: .5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+@media (max-width: 410px) {
+    .navbar .logo a {
+        font-size: .8rem;
+
+    }
+}
+
+/* HERO SECTION */
+
+.hero {
+    height: calc(100vh - 80px);
+    color: #333333;
+    padding: 2rem;
+    position: relative;
+    background-image: url(backgrounds/piano-guy.svg);
+    background-position: right bottom;
+    background-size: auto 30%;
+    background-repeat: no-repeat;
+}
+
+.hero .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 0;
+}
+
+.hero .art {
+    width: 400px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    text-align: left;
+    font-weight: 800;
+    color: #29ABE2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: left;
+    max-width: 600px;
+}
+
+.hero .button {
+    width: fit-content;
+    margin-left: 1rem;
+}
+
+/* RESPONSIVE HERO */
+
+@media (min-width: 505px) {
+    .hero {
+        background-size: auto 40%;
+    }
+}
+
+@media (min-width: 620px) {
+    .hero {
+        background-size: auto 50%;
+    }
+    .hero p {
+        margin: 2rem 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .hero {
+        background-size: auto 60%;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1060px) {
+    .hero {
+        background-size: auto 70%;
+    }
+    .hero h1 {
+        font-size: 4rem;
+    }
+}
+
+/* OVERVIEW SECTION */
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #F0F0F0;
+}
+
+.overview h2 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #196A8C;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.card p {
+    font-size: 1.2rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 4rem 1rem;
+}
+
+.card {
+    background-color: #29ABE2;
+    padding: 1.3rem;
+    border-radius: 10px;
+    color: white;
+    max-width: 305px;
+}
+
+/* OVERVIEW SECTION RESPONSIVE DESIGN */
+
+@media (min-width: 850px) {
+    .cards-container {
+        grid-template-rows: none;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+    .card h3 {
+        font-size: 2rem;
+    }
+    .overview h2 {
+        font-size: 4rem;
+    }
+}
+
+/* ABOUT SECTION */
+
+.about {
+    padding: 4rem;
+}
+
+.about header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #29ABE2;
+    margin: 2rem 0;
+}
+
+.about header h2 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .container .text {
+    padding: 2rem;
+    color: #29ABE2;
+    background-color: #f6f4f4;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about .container .text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about .container .text p {
+    font-size: 1.25rem;
+}
+
+.about .container .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+}
+
+.about .container .image img {
+    object-fit: contain;
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* ABOUT RESPONSIVE DESIGN */
+
+@media (min-width: 865px) {
+    .about .container .image {
+        margin-bottom: 0;
+    }
+    .about .container .text {
+        text-align: left;
+    }
+}
+
+/* SIGN UP SECTION */
+
+.signup {
+    background-color: #D1F1FF;
+    padding: 2rem;
+}
+
+.signup h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #196A8C;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #29ABE2;
+    padding: 2rem 2rem;
+}
+
+footer .container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+footer .container .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .container .row .footer-col {
+    width: auto;
+    padding: 0 1rem;
+}
+
+footer .container .row .footer-col h4 {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 1rem;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+.footer-col ul {
+    margin-top: 1.25rem;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 500;
+    display: block;
+    transition: .3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #196A8C;
+}
+
+.footer-col .social-links {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.footer-col .social-links i {
+    color: white;
+    font-size: 2rem;
+    margin: 0 .5rem .5rem;
+    transition: .3s ease;
+}
+
+.footer-col .social-links i:first-child {
+    margin-top: .3rem;
+    margin-left: 0;
+}
+
+.footer-col .social-links i:hover {
+    color: #196A8C;
+}
+
+footer .copyright {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer .copyright a {
+    color: white;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+}
+
+footer .copyright a:hover {
+    color: #196A8C;
+}
+
+
+/* FOOTER RESONSIVE DESIGN */
+
+@media (max-width: 515px) {
+    footer .container .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .container .row .footer-col:first-child {
+        margin-bottom: 2rem;
+    }
+}
