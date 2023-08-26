@@ -556,3 +556,169 @@ footer .copyright a:hover {
         margin-bottom: 2rem;
     }
 }
+
+/* LESSONS PAGE */
+
+/* LESSONS HERO SECTION */
+
+.lessons-hero {
+    color: #333333;
+    padding: 2rem;
+}
+
+.lessons-hero .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lessons-hero h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    text-align: left;
+    font-weight: 800;
+    color: #29ABE2;
+}
+
+.lessons-hero p {
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.lessons-hero .button {
+    width: fit-content;
+    margin-left: 1rem;
+}
+
+/* RESPONSIVE LESSONS HERO */
+
+@media (min-width: 505px) {
+    .lessons-hero {
+        background-size: auto 40%;
+    }
+}
+
+@media (min-width: 620px) {
+    .lessons-hero {
+        background-size: auto 50%;
+    }
+    .lessons-hero p {
+        margin: 2rem 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .lessons-hero {
+        background-size: auto 60%;
+    }
+    .lessons-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1060px) {
+    .lessons-hero {
+        background-size: auto 70%;
+    }
+    .lessons-hero h1 {
+        font-size: 4rem;
+    }
+}
+
+/* STUDENTS SECTION */
+
+.students {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.students header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.students header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: #196A8C;
+}
+
+.students .student-cards-container {
+    display: grid;
+    place-items: center;
+    margin: 2rem 0;
+}
+
+.students .student-cards {
+    display: grid;
+    grid-template-columns: minmax(250px, 300px);
+    gap: 2rem;
+}
+
+.students .student-cards .student-card {
+    background-color: #29ABE2;
+    color: white;
+    padding: 2rem 2rem;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.students .student-cards .student-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    translate: 0 9rem;
+    transition: .2s ease-in-out;
+}
+
+.students .student-cards .student-card p {
+    translate: 0 400px;
+    transition: .2s ease-in-out;
+}
+
+.students .student-cards .student-card p a {
+    color: #196A8C;
+}
+
+.students .student-cards .student-card:hover > p {
+    translate: 0 0;
+}
+
+.students .student-cards .student-card:hover > h3 {
+    translate: 0 0;
+}
+
+.students .button {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* STUDENTS RESPONSIVE DESIGN */
+
+@media (min-width: 1035px) {
+    .students .student-cards {
+        grid-template-columns: repeat(3, minmax(300px, 400px));
+    }
+    .students .student-cards .student-card h3 {
+        translate: 0 6rem;
+
+    }
+}
+
+@media(hover: none) {
+    .student-cards .student-card p {
+        translate: 0 0;
+    }
+    .student-cards .student-card h3 {
+        translate: 0 0;
+    }
+}
