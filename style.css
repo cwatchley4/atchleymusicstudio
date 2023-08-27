@@ -722,3 +722,62 @@ footer .copyright a:hover {
         translate: 0 0;
     }
 }
+
+/* PRICING PAGE */
+
+/* PRICING HERO SECTION */
+
+.pricing-hero {
+    color: #333333;
+    padding: 2rem;
+}
+
+.pricing-hero .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pricing-hero h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    font-weight: 800;
+    color: #29ABE2;
+}
+
+.pricing-hero p {
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.pricing-hero .button {
+    width: fit-content;
+    margin-left: 1rem;
+}
+
+/* RATES SECTION */
+
+.rates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rates h2 {
+    font-size: 2rem;
+    color: #196A8C;
+    margin-bottom: 1rem;
+}
+
+.rate-table {
+    margin: 1rem;
+}
+
+.rate-table td, th {
+    padding: 1rem;
+    background-color: #F0F0F0;
+}
