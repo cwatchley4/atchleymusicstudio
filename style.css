@@ -765,6 +765,7 @@ footer .copyright a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 2rem;
 }
 
 .rates h2 {
@@ -780,4 +781,204 @@ footer .copyright a:hover {
 .rate-table td, th {
     padding: 1rem;
     background-color: #F0F0F0;
+}
+
+.rates p {
+    padding: 1rem;
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    max-width: 500px;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.rates p a {
+    color: #29ABE2;
+    transition: .2s ease;
+}
+
+.rates p a:hover {
+    color: #196A8C;
+}
+
+/* RATES SECTION RESPONSIVE DESIGN */
+
+/* POLICIES PAGE */
+
+/* POLICIES HERO */
+
+.policies-hero {
+    color: #333333;
+    padding: 2rem;
+}
+
+.policies-hero .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.policies-hero h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    font-weight: 800;
+    color: #29ABE2;
+}
+
+.policies-hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.policies-hero .button {
+    width: fit-content;
+    margin-left: 1rem;
+}
+
+/* POLICIES SECTION */
+
+.policies {
+    margin: 2rem;
+}
+
+.policies .container {
+    display: grid;
+    place-items: center;
+}
+
+.policy-group1 {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    gap: 1rem;
+}
+
+.policy-group1 .policy {
+    background-color: #F0F0F0;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-radius: 15px;
+}
+
+.policy-group1 .policy h3 {
+    margin-bottom: 1rem;
+}
+
+.policy-group1 .policy p {
+    margin-bottom: 1rem;
+}
+
+.policy-group2 {
+    display: grid;
+    grid-template-columns: minmax(300px, 1016px);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.policy-group2 .policy {
+    background-color: #F0F0F0;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-radius: 15px;
+}
+
+.policy-group2 .policy h3 {
+    margin-bottom: 1rem;
+}
+
+.policy-group2 .policy ul {
+    margin: 1rem 0;
+}
+
+.policy-group2 .policy li {
+    margin-left: 1.5rem;
+    list-style: disc;
+}
+
+.policy-group2 .policy p {
+    margin-bottom: 1rem;
+}
+
+
+/* POLICIES RESPONSIVE DESIGN */
+
+@media (min-width: 800px) {
+    .policy-group1 {
+        grid-template-columns: repeat(2, minmax(300px, 500px));
+    }
+}
+
+/* LOGIN PAGE */
+
+/* LOGIN HERO */
+
+.login-hero {
+    color: #333333;
+    padding: 2rem;
+}
+
+.login-hero .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-hero h1 {
+    font-size: 2rem;
+    padding: 0 1rem;
+    font-weight: 800;
+    color: #29ABE2;
+}
+ 
+/* HOW TO USE MY MUSIC STAFF SECTION */
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.faq h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #196A8C;
+    text-align: center;
+}
+
+.faq ul {
+    margin: 0 2rem 2rem;
+    text-align: center;
+    font-weight: 500;
+    background-color: #F0F0F0;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.faq li {
+    margin-bottom: .25rem;
+}
+
+.faq li a {
+   color: #29ABE2;
+   transition: .2s ease;
+}
+
+.faq li a:hover {
+    color: #196A8C;
+}
+
+/* LOGIN PAGE RESPONSIVE DESIGN */
+
+@media (min-width: 600px) {
+    .login-hero h1 {
+        font-size: 3rem;
+    }
+    .faq h2 {
+        font-size: 2rem;
+    }
 }
