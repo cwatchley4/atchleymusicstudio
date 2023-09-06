@@ -664,37 +664,40 @@ footer .copyright a:hover {
     gap: 2rem;
 }
 
-.students .student-cards .student-card {
+.students .student-cards-container .student-cards .student-card {
     background-color: #29ABE2;
     color: white;
     padding: 2rem 2rem;
     text-align: center;
     overflow: hidden;
     border-radius: 15px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.students .student-cards .student-card h3 {
+.students .student-cards-container .student-cards .student-card h3 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
-    translate: 0 9rem;
     transition: .2s ease-in-out;
 }
 
-.students .student-cards .student-card p {
-    translate: 0 400px;
+.students .student-cards-container .student-cards .student-card p {
     transition: .2s ease-in-out;
+    display: none;
 }
 
-.students .student-cards .student-card p a {
+.students .student-cards-container .student-cards .student-card p a {
     color: #196A8C;
 }
 
-.students .student-cards .student-card:hover > p {
-    translate: 0 0;
+.students .student-cards-container .student-cards .student-card:hover > p {
+    display: contents;
 }
 
-.students .student-cards .student-card:hover > h3 {
-    translate: 0 0;
+.students .student-cards-container .student-cards .student-card:hover > h3 {
+    margin-bottom: 1rem;
 }
 
 .students .button {
@@ -708,18 +711,11 @@ footer .copyright a:hover {
     .students .student-cards {
         grid-template-columns: repeat(3, minmax(300px, 400px));
     }
-    .students .student-cards .student-card h3 {
-        translate: 0 6rem;
-
-    }
 }
 
-@media(hover: none) {
-    .student-cards .student-card p {
-        translate: 0 0;
-    }
-    .student-cards .student-card h3 {
-        translate: 0 0;
+@media (hover: none) {
+    .student-cards-container .student-cards .student-card p {
+        display: flex;
     }
 }
 
