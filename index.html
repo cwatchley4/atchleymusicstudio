@@ -1,150 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Atchley Music Studio | Piano Lessons in Canton, IL"/>
-    <meta property="og:image" content="https://i.ibb.co/dgS85pS/social-img.jpgg"/>
-    <meta property="og:description" content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."/>
-    <meta property="og:url" content="https://atchleymusicstudio.com"/>
-    <meta property='og:image:width' content='1200'/>
-    <meta property='og:image:height' content='630'/>
-    <meta name="description" content="    <meta property="og:description" content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="Atchley Music Studio | Piano Lessons in Canton, IL"
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/dgS85pS/social-img.jpgg"
+    />
+    <meta
+      property="og:description"
+      content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."
+    />
+    <meta property="og:url" content="https://atchleymusicstudio.com" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="description" content="
+    <meta
+      property="og:description"
+      content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."
+    />
     <title>Atchley Music Studio | Piano Lessons in Canton, IL</title>
-    <link rel="icon" href="logos/favicon.ico" sizes="48x48">
-    <link rel="icon" type="image/svg+xml" sizes="any" href="logos/logo.svg">
-    <link rel="apple-touch-icon" href="logos/apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/bc134222d9.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logos/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="logos/logo.svg" />
+    <link rel="apple-touch-icon" href="logos/apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bc134222d9.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MEJTHMQ7V"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2MEJTHMQ7V"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-2MEJTHMQ7V');
+      gtag("config", "G-2MEJTHMQ7V");
     </script>
-</head>
-<body>
-  <section class="header">
-    <nav class="navbar">
-      <div class="logo">
-        <a href="/"><img src="logos/logo.svg" alt="Curtis Atchley logo"/></a>
-        <a href="/">Atchley Music Studio</a>
-      </div>
-      <div class="links">
-        <a href="/">Home</a>
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/"
+            ><img src="logos/new-icon_white.svg" alt="Curtis Atchley logo"
+          /></a>
+          <a href="/">Atchley Music Studio</a>
+        </div>
+        <div class="links">
+          <a href="/">Home</a>
+          <a href="lessons">Lessons</a>
+          <a href="pricing">Pricing</a>
+          <a href="policies">Policies</a>
+        </div>
+        <div class="login">
+          <a href="login" class="button">Login</a>
+        </div>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="index">Home</a>
         <a href="lessons">Lessons</a>
         <a href="pricing">Pricing</a>
         <a href="policies">Policies</a>
-      </div>  
-      <div class="login">
-        <a href="login" class="button">Login</a>
+        <a href="login">Login</a>
       </div>
-      <div class="toggle-btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </nav>
-    <div class="dropdown-menu">
-      <a href="index">Home</a>
-      <a href="lessons">Lessons</a>
-      <a href="pricing">Pricing</a>
-      <a href="policies">Policies</a>
-      <a href="login">Login</a>
-    </div>
-  </section>
+    </section>
 
-<script>
-    const toggleBtn = document.querySelector(".toggle-btn")
-    const toggleBtnIcon = document.querySelector(".toggle-btn i")
-    const dropDownMenu = document.querySelector(".dropdown-menu")
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const toggleBtnIcon = document.querySelector(".toggle-btn i");
+      const dropDownMenu = document.querySelector(".dropdown-menu");
 
-    toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle("open")
-        const isOpen = dropDownMenu.classList.contains("open")
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
 
         toggleBtnIcon.classList = isOpen
-        ? "fa-solid fa-xmark"
-        : "fa-solid fa-bars"
-    }
-</script>
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
 
-<!-- HERO SECTION -->
+    <!-- HERO SECTION -->
 
-  <section class="hero">
-    <div class="text">
-      <h1>Piano Lessons <span class="highlight">Built for You</span> or Your Child.</h1>
-      <p>Atchley Music Studio gives you (or your child!) the tools you need so you can play the music you love. Do you want to give your child a new skill? Want to play and sing your favorite pop song? Want to learn jazz or your favorite classical piece? Keep reading 😁</p>
-      <a class="button" href="#signup">Sign Up</a>
-    </div>
-  </section>
-
-<!-- OVERVIEW SECTION -->
-
-  <section class="overview">
-    <h2>Learn More About <span class="highlight">My Process</span></h2>
-    <div class="cards-container">
-      <div class="card">
-        <h3>Lessons for Children</h3>
-        <p>I teach children ages 5 and up. Beginners focus on developing aural skills and an internal sense of rhythm. This lays the foundation for a life-long love of music.</p>
-      </div>
-      <div class="card">
-        <h3>Lessons for Teenagers</h3>
-        <p>Teens may go into lessons with some previous knowledge in music, or not. My goal is to teach them to play both what they love, and what they need.</p>
-      </div>
-      <div class="card">
-        <h3>Lessons for Adults</h3>
-        <p>Adults have ranging goals in learning the piano. Maybe you want a new hobby, or maybe you want to play piano at open mic night or church. I can help!</p>
-      </div>
-    </div>
-    <a class="button" href="#signup">Sign Up</a>
-  </section>
-
-<!-- ABOUT SECTION -->
-
-<section class="about">
-  <header>
-    <h2>Hi, I'm Curtis, <span class="highlight">a piano teacher in Canton</span>.</h2>
-  </header>
-    <div class="container">
-      <div class="image">
-        <img src="images/curtisandelliyah.jpg" alt="">
-      </div>
+    <section class="hero">
       <div class="text">
-        <p>I grew up surrounded by music in church, where my dad was the music director. That environment, with all kinds of people singing and harmonizing, created a love for music that eventually lead to Western Illinois University, where I got a degree in Jazz Studies. After college, I found myself on staff at my own local church (Lakeland Community Church), where I'm the music director today.</p>
+        <h1>Piano Lessons <span class="highlight">in Canton</span>, IL.</h1>
+        <p>
+          Atchley Music Studio gives you (or your child!) the tools you need so
+          you can play the music you love. Do you want to give your child a new
+          skill? Want to play and sing your favorite pop song? Want to learn
+          jazz or your favorite classical piece? Keep reading 😁
+        </p>
+        <a class="button" href="#signup">Sign Up</a>
       </div>
-    </div>
-</section>
+    </section>
 
-<!-- SIGN UP SECTION -->
-<section class="signup" id="signup">
-  <header>
-    <h2>Sign Up Here ⬇️</h2>
-  </header>
-  <script defer type='text/javascript' src='https://app.mymusicstaff.com/Widget/v3/Registration.ashx?id=sch_NcVJd' class='sb_registration'></script>
-</section>
+    <!-- OVERVIEW SECTION -->
 
-<!-- FOOTER SECTION -->
-    
-<footer>
-  <div class="container">
-      <div class="row">
+    <section class="overview">
+      <h2>Learn More About <span class="highlight">My Process</span></h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Lessons for Children</h3>
+          <p>
+            I teach children ages 5 and up. Beginners focus on developing aural
+            skills and an internal sense of rhythm. This lays the foundation for
+            a life-long love of music.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Lessons for Teenagers</h3>
+          <p>
+            Teens may go into lessons with some previous knowledge in music, or
+            not. My goal is to teach them to play both what they love, and what
+            they need.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Lessons for Adults</h3>
+          <p>
+            Adults have ranging goals in learning the piano. Maybe you want a
+            new hobby, or maybe you want to play piano at open mic night or
+            church. I can help!
+          </p>
+        </div>
+      </div>
+      <a class="button" href="#signup">Sign Up</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about">
+      <header>
+        <h2>
+          Hi, I'm Curtis,
+          <span class="highlight">a piano teacher in Canton</span>.
+        </h2>
+      </header>
+      <div class="container">
+        <div class="image">
+          <img src="images/curtisandelliyah.jpg" alt="" />
+        </div>
+        <div class="text">
+          <p>
+            I grew up surrounded by music in church, where my dad was the music
+            director. That environment, with all kinds of people singing and
+            harmonizing, created a love for music that eventually lead to
+            Western Illinois University, where I got a degree in Jazz Studies.
+            After college, I found myself on staff at my own local church
+            (Lakeland Community Church), where I'm the music director today.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGN UP SECTION -->
+    <section class="signup" id="signup">
+      <header>
+        <h2>Sign Up Here ⬇️</h2>
+      </header>
+      <div style="max-width: 1150px; margin: 0 auto">
+        <script
+          defer
+          type="text/javascript"
+          src="https://app.mymusicstaff.com/Widget/v3/Registration.ashx?id=sch_NcVJd"
+          class="sb_registration"
+        ></script>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
           <div class="footer-col">
-              <h4>Atchley Music Studio</h4>
-              <ul>
-                  <li><a href="#">Student/Parent Login</a></li>
-              </ul>
+            <h4>Atchley Music Studio</h4>
+            <ul>
+              <li><a href="#">Student/Parent Login</a></li>
+            </ul>
           </div>
           <div class="footer-col">
-              <h4>Social</h4>
-              <div class="social-links">
-                  <a href="https://www.facebook.com/atchleymusicstudio" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-              </div>
+            <h4>Social</h4>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/atchleymusicstudio"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-  <p class="copyright">© Copyright 2023. Made by <a href="https://curtisatchley.com" target="_blank">Curtis Atchley</a>.</p>
-</footer>
-
-</body>
+      <p class="copyright">
+        © Copyright 2023. Made by
+        <a href="https://curtisatchley.com" target="_blank">Curtis Atchley</a>.
+      </p>
+    </footer>
+  </body>
+</html>
