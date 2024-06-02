@@ -15,6 +15,14 @@ body {
   background-color: white;
 }
 
+.body_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
 .button {
   background-color: #29abe2;
   color: white;
@@ -231,32 +239,28 @@ button:hover {
 /* HERO SECTION */
 
 .hero {
-  height: calc(100vh - 80px);
+  height: 80vh;
   max-width: 1150px;
   margin: 0 auto;
   color: #333333;
   padding: 2rem;
-  position: relative;
-  background-image: url(backgrounds/piano-guy.svg);
-  background-position: right bottom;
-  background-size: auto 30%;
+  background-image: url(images/grand-piano-lines.svg);
+  background-position: right;
   background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  overflow: hidden;
 }
 
 .hero .text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   right: 0;
-}
-
-.hero .art {
-  width: 400px;
+  gap: 2rem;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  padding: 0 1rem;
+  font-size: 3.6rem;
   text-align: left;
   font-weight: 800;
   color: #29abe2;
@@ -264,60 +268,58 @@ button:hover {
 
 .hero p {
   font-size: 1.2rem;
-  padding: 1rem;
-  margin: 1rem 0;
   text-align: left;
-  max-width: 600px;
+  max-width: 440px;
 }
 
 .hero .button {
   width: fit-content;
-  margin-left: 1rem;
 }
 
 /* RESPONSIVE HERO */
 
-@media (min-width: 505px) {
+@media (max-width: 930px) {
   .hero {
-    background-size: auto 40%;
+    background-position-y: 75%;
   }
 }
 
-@media (min-width: 620px) {
-  .hero {
-    background-size: auto 50%;
-  }
-  .hero p {
-    margin: 2rem 0;
-  }
-}
-
-@media (min-width: 900px) {
-  .hero {
-    background-size: auto 60%;
-  }
+@media (max-width: 650px) {
   .hero h1 {
     font-size: 3rem;
   }
+  .hero h1 br {
+    display: none;
+  }
+  .hero {
+    height: 75vh;
+    background-position-y: 100%;
+  }
+}
+@media (max-width: 530px) {
+  .hero h1 {
+    font-size: 2.5;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
 }
 
-@media (min-width: 1060px) {
+@media (min-height: 830px) {
   .hero {
-    background-size: auto 70%;
+    height: 65vh;
   }
-  .hero h1 {
-    font-size: 4rem;
+}
+
+@media (min-height: 950px) {
+  .hero {
+    height: 65vh;
   }
 }
 
 /* OVERVIEW SECTION */
 
 .overview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem;
   background-color: #f0f0f0;
 }
 
