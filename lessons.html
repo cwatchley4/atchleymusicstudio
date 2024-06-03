@@ -1,197 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Lessons | Atchley Music Studio"/>
-    <meta property="og:image" content="https://i.ibb.co/dgS85pS/social-img.jpgg"/>
-    <meta property="og:description" content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."/>
-    <meta property="og:url" content="https://atchleymusicstudio.com"/>
-    <meta property='og:image:width' content='1200'/>
-    <meta property='og:image:height' content='630'/>
-    <meta name="description" content="    <meta property="og:description" content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Lessons | Atchley Music Studio" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/dgS85pS/social-img.jpgg"
+    />
+    <meta
+      property="og:description"
+      content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."
+    />
+    <meta property="og:url" content="https://atchleymusicstudio.com" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="description" content="
+    <meta
+      property="og:description"
+      content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."
+    />
     <title>Lessons | Atchley Music Studio</title>
-    <link rel="icon" href="logos/favicon.ico" sizes="48x48">
-    <link rel="icon" type="image/svg+xml" sizes="any" href="logos/logo.svg">
-    <link rel="apple-touch-icon" href="logos/apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/bc134222d9.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logos/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="logos/logo.svg" />
+    <link rel="apple-touch-icon" href="logos/apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bc134222d9.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MEJTHMQ7V"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2MEJTHMQ7V"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-2MEJTHMQ7V');
+      gtag("config", "G-2MEJTHMQ7V");
     </script>
   </head>
-<body>
-  <section class="header">
-    <nav class="navbar">
-      <div class="logo">
-        <a href="/"><img src="logos/logo.svg" alt="Curtis Atchley logo"/></a>
-        <a href="/">Atchley Music Studio</a>
-      </div>
-      <div class="links">
-        <a href="/">Home</a>
+  <body>
+    <section class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/"
+            ><img src="logos/new-icon_white.svg" alt="Curtis Atchley logo"
+          /></a>
+          <a href="/">Atchley Music Studio</a>
+        </div>
+        <div class="links">
+          <a href="/">Home</a>
+          <a href="lessons">Lessons</a>
+          <a href="pricing">Pricing</a>
+          <a href="policies">Policies</a>
+        </div>
+        <div class="login">
+          <a href="login" class="button">Login</a>
+        </div>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="index">Home</a>
         <a href="lessons">Lessons</a>
         <a href="pricing">Pricing</a>
         <a href="policies">Policies</a>
-      </div>  
-      <div class="login">
-        <a href="login" class="button">Login</a>
+        <a href="login">Login</a>
       </div>
-      <div class="toggle-btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </nav>
-    <div class="dropdown-menu">
-      <a href="index">Home</a>
-      <a href="lessons">Lessons</a>
-      <a href="pricing">Pricing</a>
-      <a href="policies">Policies</a>
-      <a href="login">Login</a>
-    </div>
-  </section>
+    </section>
 
-<script>
-    const toggleBtn = document.querySelector(".toggle-btn")
-    const toggleBtnIcon = document.querySelector(".toggle-btn i")
-    const dropDownMenu = document.querySelector(".dropdown-menu")
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const toggleBtnIcon = document.querySelector(".toggle-btn i");
+      const dropDownMenu = document.querySelector(".dropdown-menu");
 
-    toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle("open")
-        const isOpen = dropDownMenu.classList.contains("open")
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
 
         toggleBtnIcon.classList = isOpen
-        ? "fa-solid fa-xmark"
-        : "fa-solid fa-bars"
-    }
-</script>
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
 
-<!-- HERO SECTION -->
+    <!-- HERO SECTION -->
 
-  <section class="lessons-hero">
-    <div class="text">
-      <h1>Lessons for <span class="highlight">all</span> ages.</h1>
-      <p>Read below to learn about my process for children, teens, and adults.</p>
-      <a class="button" href="#signup">Sign Up</a>
-    </div>
-  </section>
+    <section class="lessons-hero">
+      <div class="text">
+        <h1>Lessons for <span class="highlight">all</span> ages.</h1>
+        <p>
+          Read below to learn about my process for children, teens, and adults.
+        </p>
+        <a class="button" href="#signup">Sign Up</a>
+      </div>
+    </section>
 
-<!-- STUDENTS SECTION -->
+    <!-- STUDENTS SECTION -->
 
-<section class="students">
-  <header>
-    <h2>Lessons for <span class="highlight">children</span>.</h2>
-  </header>
-  <div class="student-cards-container">
-    <div class="student-cards">
-      <div class="student-card">
-        <h3>Ages 5, 6, and 7</h3>
-        <p>My goal at the first few lessons is to get your child excited about the piano. In lesson one we start improvising on the black keys together. This is fun for the child and allows me to asses their musicality so we can set some long term goals. I don't begin with a method book because the main goal at the beginning is to create a passion for music and to develop musicality, not to earn stickers and work towards a certificate (although there's a place for that!).</p>
+    <section class="students">
+      <header>
+        <h2>Lessons for <span class="highlight">children</span>.</h2>
+      </header>
+      <div class="student-cards-container">
+        <div class="student-cards">
+          <div class="student-card">
+            <h3>Ages 5, 6, and 7</h3>
+            <p>
+              My goal at the first few lessons is to get your child excited
+              about the piano. In lesson one we start improvising on the black
+              keys together. This is fun for the child and allows me to asses
+              their musicality so we can set some long term goals. I don't begin
+              with a method book because the main goal at the beginning is to
+              create a passion for music and to develop musicality, not to earn
+              stickers and work towards a certificate (although there's a place
+              for that!).
+            </p>
+          </div>
+          <div class="student-card">
+            <h3>Ages 8, 9, and 10</h3>
+            <p>
+              Beginners at this age also receive a no-book approach at first.
+              Eventually, we will use a method book to supplement aural skills
+              training. I like to use the Piano Safari method for children.
+              We'll also be implementing technology with games to learn music
+              theory (things like note values). It's important to keep children
+              excited about music, so we will always work on a song or tune that
+              they enjoy along with the Piano Safari books.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3>Ages 11 and up</h3>
+            <p>
+              As your child approaches teenage-hood, there are a few things to
+              consider. Beginners will receive the same no-book approach at
+              first, but will move faster through it. Many children at this age
+              already have of some sort of musical background (even if just a
+              little), and that will be taken into consideration. We'll continue
+              moving through more advanced levels of method books, eventually
+              leaving method books and entering a more intermediate level.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="student-card">
-        <h3>Ages 8, 9, and 10</h3>
-        <p>Beginners at this age also receive a no-book approach at first. Eventually, we will use a method book to supplement aural skills training. I like to use the Piano Safari method for children. We'll also be implementing technology with games to learn music theory (things like note values). It's important to keep children excited about music, so we will always work on a song or tune that they enjoy along with the Piano Safari books.</p>
+      <header>
+        <h2>Lessons for <span class="highlight">teens</span>.</h2>
+      </header>
+      <div class="student-cards-container">
+        <div class="student-cards">
+          <div class="student-card">
+            <h3>Beginners</h3>
+            <p>
+              My goal at the first few lessons is to get my student excited
+              about the piano. It's a low pressure environment that allows me to
+              asses the student's musicality so we can set some long term goals.
+              I don't begin with a method book because the main goal at the
+              beginning is to create a passion for music and to develop
+              musicality, not to earn stickers and work towards a certificate.
+              Eventually, we will get into a method book to learn tecnique and
+              theory, but we will always work on something the student wants to
+              learn.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3>Intermediate</h3>
+            <p>
+              Students at this level are usually moving out of a method book and
+              into classical music. This is always a fun time in a piano
+              student's growth, as a challenging piece of music is very
+              rewarding to master. It's important to keep in mind that my goal
+              is for the student to enjoy learning the piano, not to simply get
+              a song up to tempo and then moving to the next song. We can also
+              implement other styles of music, like jazz (which is what I
+              studied in college!).
+            </p>
+          </div>
+          <div class="student-card">
+            <h3>Just for Fun</h3>
+            <p>
+              If you're a teen who simply wants to learn to play your favorite
+              popular song, I can help with that. Students who are interested in
+              learning to play chord symbols are sometimes also interested in
+              writing their own music. The possibilities to this approach are
+              really endless!
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="student-card">
-        <h3>Ages 11 and up</h3>
-        <p>As your child approaches teenage-hood, there are a few things to consider. Beginners will receive the same no-book approach at first, but will move faster through it. Many children at this age already have of some sort of musical background (even if just a little), and that will be taken into consideration. We'll continue moving through more advanced levels of method books, eventually leaving method books and entering a more intermediate level.</p>
+      <header>
+        <h2>Lessons for <span class="highlight">adults</span>.</h2>
+      </header>
+      <div class="student-cards-container">
+        <div class="student-cards">
+          <div class="student-card">
+            <h3>Been here before?</h3>
+            <p>
+              I've had so many adults tell me over the years, "I wish I would
+              have never stopped taking lessons." Well, I'm here to tell you,
+              it's never too late! I will create a lesson plan for you that is
+              built around your desires. I know you're busy and have enough
+              stress, so you can expect an easy going, casual experience in my
+              studio. Send me a message, let's talk about the music you like.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3>Lessons Built for You</h3>
+            <p>
+              Regardless of age, I begin with a no-book approach for new
+              students. There is no method book at first, and we'll focus on
+              improvisation and having fun. My goal in the beginning is to get
+              you excited about learning the piano and to find out what makes
+              you tick. After the first few weeks (or maybe months!) of the
+              no-book approach, we can get into learning to read music, chord
+              charts, or whatever you like. The curriculum is built around your
+              needs.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3>Play in church?</h3>
+            <p>
+              This is my wheel house! My full-time job is as a worship pastor at
+              my church. I can teach you how to read chord charts, how to play
+              in different keys, and how to feel comfortable and confident on
+              the stage on Sunday morning. Eventually, you'll be able to hear a
+              song on the radio or from your most recent favorite worship album
+              and know exactly what is going on in the changes.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <header>
-    <h2>Lessons for <span class="highlight">teens</span>.</h2>
-  </header>
-  <div class="student-cards-container">
-    <div class="student-cards">
-      <div class="student-card">
-        <h3>Beginners</h3>
-        <p>My goal at the first few lessons is to get my student excited about the piano. It's a low pressure environment that allows me to asses the student's musicality so we can set some long term goals. I don't begin with a method book because the main goal at the beginning is to create a passion for music and to develop musicality, not to earn stickers and work towards a certificate. Eventually, we will get into a method book to learn tecnique and theory, but we will always work on something the student wants to learn.</p>
+      <header>
+        <h2>More <span class="highlight">Info</span></h2>
+      </header>
+      <div class="student-cards-container">
+        <div class="student-cards">
+          <div class="student-card">
+            <h3>Performances</h3>
+            <p>
+              We will have various performance opportunities for children
+              ranging in style. Everything from small gatherings at my home
+              studio with other students and their families, to recital type
+              performances.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3>Resources</h3>
+            <p>
+              When you sign up for lessons, I will provide a list of all the
+              materials needed. You and your child will also have access to
+              everything lesson related (lessons notes, PDFs, videos,
+              assignments) through my music studio software. You may also make
+              monthly payments in the parent portal.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3>More questions?</h3>
+            <p>
+              Please feel free email me at
+              <a href="mailto: atchleymusicstudio@gmail.com"
+                >atchleymusicstudio@gmail.com</a
+              >. View detailed studio policies <a href="/policies">here</a>.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="student-card">
-        <h3>Intermediate</h3>
-        <p>Students at this level are usually moving out of a method book and into classical music. This is always a fun time in a piano student's growth, as a challenging piece of music is very rewarding to master. It's important to keep in mind that my goal is for the student to enjoy learning the piano, not to simply get a song up to tempo and then moving to the next song. We can also implement other styles of music, like jazz (which is what I studied in college!).</p>
-      </div>
-      <div class="student-card">
-        <h3>Just for Fun</h3>
-        <p>If you're a teen who simply wants to learn to play your favorite popular song, I can help with that. Students who are interested in learning to play chord symbols are sometimes also interested in writing their own music. The possibilities to this approach are really endless!</p>
-      </div>
-    </div>
-  </div>
-  <header>
-    <h2>Lessons for <span class="highlight">adults</span>.</h2>
-  </header>
-  <div class="student-cards-container">
-    <div class="student-cards">
-      <div class="student-card">
-        <h3>Been here before?</h3>
-        <p>I've had so many adults tell me over the years, "I wish I would have never stopped taking lessons." Well, I'm here to tell you, it's never too late! I will create a lesson plan for you that is built around your desires. I know you're busy and have enough stress, so you can expect an easy going, casual experience in my studio. Send me a message, let's talk about the music you like.</p>
-      </div>
-      <div class="student-card">
-        <h3>Lessons Built for You</h3>
-        <p>Regardless of age, I begin with a no-book approach for new students. There is no method book at first, and we'll focus on improvisation and having fun. My goal in the beginning is to get you excited about learning the piano and to find out what makes you tick. After the first few weeks (or maybe months!) of the no-book approach, we can get into learning to read music, chord charts, or whatever you like. The curriculum is built around your needs.</p>
-      </div>
-      <div class="student-card">
-        <h3>Play in church?</h3>
-        <p>This is my wheel house! My full-time job is as a worship pastor at my church. I can teach you how to read chord charts, how to play in different keys, and how to feel comfortable and confident on the stage on Sunday morning. Eventually, you'll be able to hear a song on the radio or from your most recent favorite worship album and know exactly what is going on in the changes.</p>
-      </div>
-    </div>
-  </div>
-  <header>
-    <h2>More <span class="highlight">Info</span></h2>
-  </header>
-  <div class="student-cards-container">
-    <div class="student-cards">
-      <div class="student-card">
-        <h3>Performances</h3>
-        <p>We will have various performance opportunities for children ranging in style. Everything from small gatherings at my home studio with other students and their families, to recital type performances. </p>
-      </div>
-      <div class="student-card">
-        <h3>Resources</h3>
-        <p>When you sign up for lessons, I will provide a list of all the materials needed. You and your child will also have access to everything lesson related (lessons notes, PDFs, videos, assignments) through my music studio software. You may also make monthly payments in the parent portal.</p>
-      </div>
-      <div class="student-card">
-        <h3>More questions?</h3>
-        <p>Please feel free email me at <a href="mailto: atchleymusicstudio@gmail.com">atchleymusicstudio@gmail.com</a>. View detailed studio policies <a href="/policies">here</a>.</p>
-      </div>
-    </div>
-  </div>
-  <a href="#signup" class="button">Sign Up</a>
-</section>
+      <a href="#signup" class="button">Sign Up</a>
+    </section>
 
-<!-- MORE INFO SECTION -->
+    <!-- MORE INFO SECTION -->
 
-<!-- SIGN UP SECTION -->
-<section class="signup" id="signup">
-  <header>
-    <h2>Sign Up Here ⬇️</h2>
-  </header>
-  <script defer type='text/javascript' src='https://app.mymusicstaff.com/Widget/v3/Registration.ashx?id=sch_NcVJd' class='sb_registration'></script>
-</section>
+    <!-- SIGN UP SECTION -->
+    <section class="signup" id="signup">
+      <header>
+        <h2>Sign Up Here ⬇️</h2>
+      </header>
+      <script
+        defer
+        type="text/javascript"
+        src="https://app.mymusicstaff.com/Widget/v3/Registration.ashx?id=sch_NcVJd"
+        class="sb_registration"
+      ></script>
+    </section>
 
-<!-- FOOTER SECTION -->
-    
-<footer>
-  <div class="container">
-      <div class="row">
+    <!-- FOOTER SECTION -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
           <div class="footer-col">
-              <h4>Atchley Music Studio</h4>
-              <ul>
-                  <li><a href="#">Student/Parent Login</a></li>
-              </ul>
+            <h4>Atchley Music Studio</h4>
+            <ul>
+              <li><a href="#">Student/Parent Login</a></li>
+            </ul>
           </div>
           <div class="footer-col">
-              <h4>Social</h4>
-              <div class="social-links">
-                  <a href="https://www.facebook.com/atchleymusicstudio" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-              </div>
+            <h4>Social</h4>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/atchleymusicstudio"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-  <p class="copyright">© Copyright 2023. Made by <a href="https://curtisatchley.com" target="_blank">Curtis Atchley</a>.</p>
-</footer>
-
-</body>
+      <p class="copyright">
+        © Copyright 2023. Made by
+        <a href="https://curtisatchley.com" target="_blank">Curtis Atchley</a>.
+      </p>
+    </footer>
+  </body>
+</html>

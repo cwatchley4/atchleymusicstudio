@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Pricing | Atchley Music Studio"/>
-    <meta property="og:image" content="https://i.ibb.co/dgS85pS/social-img.jpgg"/>
-    <meta property="og:description" content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."/>
-    <meta property="og:url" content="https://atchleymusicstudio.com"/>
-    <meta property='og:image:width' content='1200'/>
-    <meta property='og:image:height' content='630'/>
-    <meta name="description" content="    <meta property="og:description" content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Pricing | Atchley Music Studio" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/dgS85pS/social-img.jpgg"
+    />
+    <meta
+      property="og:description"
+      content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."
+    />
+    <meta property="og:url" content="https://atchleymusicstudio.com" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="description" content="
+    <meta
+      property="og:description"
+      content="Piano teacher in Canton, IL. I give you the tools you need to play the music you love."
+    />
     <title>Pricing | Atchley Music Studio</title>
-    <link rel="icon" href="logos/favicon.ico" sizes="48x48">
-    <link rel="icon" type="image/svg+xml" sizes="any" href="logos/logo.svg">
-    <link rel="apple-touch-icon" href="logos/apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/bc134222d9.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logos/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="logos/logo.svg" />
+    <link rel="apple-touch-icon" href="logos/apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bc134222d9.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MEJTHMQ7V"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2MEJTHMQ7V"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-2MEJTHMQ7V');
+      gtag("config", "G-2MEJTHMQ7V");
     </script>
   </head>
-<body>
-  <section class="header">
-    <nav class="navbar">
-      <div class="logo">
-        <a href="/"><img src="logos/logo.svg" alt="Curtis Atchley logo"/></a>
-        <a href="/">Atchley Music Studio</a>
-      </div>
-      <div class="links">
-        <a href="/">Home</a>
+  <body>
+    <section class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/"
+            ><img src="logos/new-icon_white.svg" alt="Curtis Atchley logo"
+          /></a>
+          <a href="/">Atchley Music Studio</a>
+        </div>
+        <div class="links">
+          <a href="/">Home</a>
+          <a href="lessons">Lessons</a>
+          <a href="pricing">Pricing</a>
+          <a href="policies">Policies</a>
+        </div>
+        <div class="login">
+          <a href="login" class="button">Login</a>
+        </div>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="index">Home</a>
         <a href="lessons">Lessons</a>
         <a href="pricing">Pricing</a>
         <a href="policies">Policies</a>
-      </div>  
-      <div class="login">
-        <a href="login" class="button">Login</a>
+        <a href="login">Login</a>
       </div>
-      <div class="toggle-btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </nav>
-    <div class="dropdown-menu">
-      <a href="index">Home</a>
-      <a href="lessons">Lessons</a>
-      <a href="pricing">Pricing</a>
-      <a href="policies">Policies</a>
-      <a href="login">Login</a>
-    </div>
-  </section>
+    </section>
 
-<script>
-    const toggleBtn = document.querySelector(".toggle-btn")
-    const toggleBtnIcon = document.querySelector(".toggle-btn i")
-    const dropDownMenu = document.querySelector(".dropdown-menu")
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const toggleBtnIcon = document.querySelector(".toggle-btn i");
+      const dropDownMenu = document.querySelector(".dropdown-menu");
 
-    toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle("open")
-        const isOpen = dropDownMenu.classList.contains("open")
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
 
         toggleBtnIcon.classList = isOpen
-        ? "fa-solid fa-xmark"
-        : "fa-solid fa-bars"
-    }
-</script>
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
 
-<!-- HERO SECTION -->
+    <!-- HERO SECTION -->
 
-  <section class="pricing-hero">
-    <div class="text">
-      <h1>Simple rates, <span class="highlight">great value</span>.</h1>
-      <p>Read below to learn about my rates.</p>
-      <a class="button" href="#signup">Sign Up</a>
-    </div>
-  </section>
+    <section class="pricing-hero">
+      <div class="text">
+        <h1>Simple rates, <span class="highlight">great value</span>.</h1>
+        <p>Read below to learn about my rates.</p>
+        <a class="button" href="#signup">Sign Up</a>
+      </div>
+    </section>
 
-<!-- STUDENTS SECTION -->
+    <!-- STUDENTS SECTION -->
 
-<section class="rates">
-  <header>
-    <h2>My hourly rate: <span class="highlight">$40 per hour</span></h2>
-  </header>
-  <!-- <table class="rate-table">
+    <section class="rates">
+      <header>
+        <h2>My hourly rate: <span class="highlight">$40 per hour</span></h2>
+      </header>
+      <!-- <table class="rate-table">
     <tr>
       <th>30 min lesson</th>
       <th>45 min lesson</th>
@@ -98,38 +118,55 @@
       <td>$160 per month</td>
     </tr>
   </table> -->
-  <p>During the school year (mid-August to mid-May) you can expect to receive <b>36 lessons</b>. If you're taking 30 minute lessons: $20 per lesson x 36 = $720 / 9 months = <b>$80 per month</b>. Summers are priced on a flexible schedule to allow for vacations and breaks. See my <a href="/policies">policies</a> for more details.</p>
-</section>
+      <p>
+        During the school year (mid-August to mid-May) you can expect to receive
+        <b>36 lessons</b>. If you're taking 30 minute lessons: $20 per lesson x
+        36 = $720 / 9 months = <b>$80 per month</b>. Summers are priced on a
+        flexible schedule to allow for vacations and breaks. See my
+        <a href="/policies">policies</a> for more details.
+      </p>
+    </section>
 
+    <!-- SIGN UP SECTION -->
+    <section class="signup" id="signup">
+      <header>
+        <h2>Sign Up Here ⬇️</h2>
+      </header>
+      <script
+        defer
+        type="text/javascript"
+        src="https://app.mymusicstaff.com/Widget/v3/Registration.ashx?id=sch_NcVJd"
+        class="sb_registration"
+      ></script>
+    </section>
 
-<!-- SIGN UP SECTION -->
-<section class="signup" id="signup">
-  <header>
-    <h2>Sign Up Here ⬇️</h2>
-  </header>
-  <script defer type='text/javascript' src='https://app.mymusicstaff.com/Widget/v3/Registration.ashx?id=sch_NcVJd' class='sb_registration'></script>
-</section>
+    <!-- FOOTER SECTION -->
 
-<!-- FOOTER SECTION -->
-    
-<footer>
-  <div class="container">
-      <div class="row">
+    <footer>
+      <div class="container">
+        <div class="row">
           <div class="footer-col">
-              <h4>Atchley Music Studio</h4>
-              <ul>
-                  <li><a href="#">Student/Parent Login</a></li>
-              </ul>
+            <h4>Atchley Music Studio</h4>
+            <ul>
+              <li><a href="#">Student/Parent Login</a></li>
+            </ul>
           </div>
           <div class="footer-col">
-              <h4>Social</h4>
-              <div class="social-links">
-                  <a href="https://www.facebook.com/atchleymusicstudio" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-              </div>
+            <h4>Social</h4>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/atchleymusicstudio"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-  <p class="copyright">© Copyright 2023. Made by <a href="https://curtisatchley.com" target="_blank">Curtis Atchley</a>.</p>
-</footer>
-
-</body>
+      <p class="copyright">
+        © Copyright 2023. Made by
+        <a href="https://curtisatchley.com" target="_blank">Curtis Atchley</a>.
+      </p>
+    </footer>
+  </body>
+</html>
