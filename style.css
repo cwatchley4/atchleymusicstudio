@@ -1,9 +1,30 @@
-* {
+:root * {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  --header_bold-font-family: "Yeseva One";
+  --header_regular-font-family: "Yeseva One";
+  --body-font-family: "Josefin Sans";
+}
+
+@font-face {
+  font-family: "Yeseva One Bold";
+  src: url(fonts/YesevaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Yeseva One Regular";
+  src: url(fonts/YesevaOne-Regular.ttf);
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url(fonts/Josefin_Sans/JosefinSans-Regular.ttf);
+  font-weight: normal;
+  ascent-override: 100%;
 }
 
 html {
@@ -11,8 +32,22 @@ html {
 }
 
 body {
-  font-family: "gill-sans-nova", sans-serif;
   background-color: white;
+}
+
+h1,
+h2 {
+  font-family: var(--header_bold-font-family);
+}
+
+h3,
+h4 {
+  font-family: var(--header_regular-font-family);
+}
+
+p,
+a {
+  font-family: var(--body-font-family);
 }
 
 .body_section {
@@ -135,6 +170,7 @@ button:hover {
 .navbar .logo a {
   font-size: 1.5rem;
   display: flex;
+  font-family: "Yeseva One";
 }
 
 .navbar .links {
@@ -170,7 +206,7 @@ button:hover {
 }
 
 .dropdown-menu.open {
-  height: 204.45px;
+  height: 192px;
   z-index: 1;
 }
 
@@ -181,8 +217,6 @@ button:hover {
   justify-content: center;
   color: white;
   font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .dropdown-menu a:hover {
@@ -450,6 +484,10 @@ button:hover {
 .signup {
   background-color: #d1f1ff;
   padding: 2rem;
+  background-image: url(backgrounds/notes-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .signup h2 {
@@ -469,6 +507,7 @@ footer {
 footer .container {
   max-width: 1000px;
   margin: auto;
+  padding-top: 1.5rem;
 }
 
 footer .container .row {
@@ -535,6 +574,7 @@ footer .copyright {
   color: white;
   text-align: center;
   margin-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 footer .copyright a {
